@@ -1,0 +1,8 @@
+host:10.211.11.10, share:ADMIN$, privs:NO_ACCESS
+host:10.211.11.10, share:AnonShare, privs:READ_WRITE
+host:10.211.11.10, share:C$, privs:NO_ACCESS
+host:10.211.11.10, share:IPC$, privs:NO_ACCESS
+host:10.211.11.10, share:NETLOGON, privs:NO_ACCESS
+host:10.211.11.10, share:SharedFiles, privs:READ_WRITE
+host:10.211.11.10, share:SYSVOL, privs:NO_ACCESS
+host:10.211.11.10, share:UserBackups, privs:READ_WRITE

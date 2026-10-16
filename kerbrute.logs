@@ -1,0 +1,30 @@
+2026/10/02 11:44:35 >  Using KDC(s):
+2026/10/02 11:44:35 >  	10.211.11.10:88
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 sshd@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 marion.kay@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 barbara.jones@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 Administrator@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 nigel.parsons@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 guy.smith@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 gerald.burgess@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 jeremy.booth@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 kathryn.williams@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 danny.baker@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 gary.clarke@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 daniel.turner@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 debra.yates@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 jeffrey.thompson@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 danielle.lee@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 martin.riley@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 douglas.roberts@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 danielle.ali@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 jennifer.harding@tryhackme.loc
+2026/10/02 11:44:35 >  [+] VALID USERNAME:	 strategos@tryhackme.loc
+2026/10/02 11:44:36 >  [+] VALID USERNAME:	 drgonz0@tryhackme.loc
+2026/10/02 11:44:36 >  [+] VALID USERNAME:	 empanadal0v3r@tryhackme.loc
+2026/10/02 11:44:36 >  [+] VALID USERNAME:	 strate905@tryhackme.loc
+2026/10/02 11:44:36 >  [+] VALID USERNAME:	 krbtgtsvc@tryhackme.loc
+2026/10/02 11:44:36 >  [+] VALID USERNAME:	 asrepuser1@tryhackme.loc
+2026/10/02 11:44:36 >  [+] VALID USERNAME:	 rduke@tryhackme.loc
+2026/10/02 11:44:36 >  [+] VALID USERNAME:	 user@tryhackme.loc
+2026/10/02 11:44:36 >  Done! Tested 32 usernames (27 valid) in 0.924 seconds

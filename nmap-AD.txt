@@ -1,0 +1,94 @@
+# Nmap 7.98 scan initiated Fri Oct  2 09:24:41 2026 as: nmap -sV -p 88,135,139,389,445 -sC -iL fping.txt -oN nmap-AD.txt
+Nmap scan report for 10.211.11.10
+Host is up (0.15s latency).
+
+PORT    STATE SERVICE      VERSION
+88/tcp  open  kerberos-sec Microsoft Windows Kerberos (server time: 2026-10-02 13:24:52Z)
+135/tcp open  msrpc        Microsoft Windows RPC
+139/tcp open  netbios-ssn  Microsoft Windows netbios-ssn
+389/tcp open  ldap         Microsoft Windows Active Directory LDAP (Domain: tryhackme.loc, Site: Default-First-Site-Name)
+445/tcp open  microsoft-ds Windows Server 2019 Datacenter 17763 microsoft-ds (workgroup: TRYHACKME)
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-os-discovery: 
+|   OS: Windows Server 2019 Datacenter 17763 (Windows Server 2019 Datacenter 6.3)
+|   Computer name: DC
+|   NetBIOS computer name: DC\x00
+|   Domain name: tryhackme.loc
+|   Forest name: tryhackme.loc
+|   FQDN: DC.tryhackme.loc
+|_  System time: 2026-10-02T13:25:10+00:00
+| smb2-time: 
+|   date: 2026-10-02T13:25:03
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+|_clock-skew: mean: 3s, deviation: 4s, median: 0s
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+
+Nmap scan report for 10.211.11.20
+Host is up (0.23s latency).
+
+PORT    STATE  SERVICE       VERSION
+88/tcp  closed kerberos-sec
+135/tcp open   msrpc         Microsoft Windows RPC
+139/tcp open   netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp closed ldap
+445/tcp open   microsoft-ds?
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2026-10-02T13:25:06
+|_  start_date: N/A
+
+Nmap scan report for 10.211.11.250
+Host is up (0.18s latency).
+
+PORT    STATE  SERVICE      VERSION
+88/tcp  closed kerberos-sec
+135/tcp closed msrpc
+139/tcp open   netbios-ssn  Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+389/tcp closed ldap
+445/tcp open   netbios-ssn  Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
+Service Info: Host: IP-10-211-11-250
+
+Host script results:
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-time: 
+|   date: 2026-10-02T13:25:11
+|_  start_date: N/A
+|_nbstat: NetBIOS name: IP-10-211-11-25, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+|_clock-skew: mean: 3s, deviation: 5s, median: 0s
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
+|   Computer name: ip-10-211-11-250
+|   NetBIOS computer name: IP-10-211-11-250\x00
+|   Domain name: us-west-2.compute.internal
+|   FQDN: ip-10-211-11-250.us-west-2.compute.internal
+|_  System time: 2026-10-02T13:25:11+00:00
+
+Post-scan script results:
+| clock-skew: 
+|   3s: 
+|     10.211.11.10
+|     10.211.11.250
+|_    10.211.11.20
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Oct  2 09:25:24 2026 -- 4 IP addresses (3 hosts up) scanned in 43.15 seconds

@@ -1,0 +1,37 @@
+# Nmap 7.98 scan initiated Fri Oct  2 09:35:42 2026 as: nmap -sVC -p 88,135,139,389,445,636 -oN ad-listening-ports.txt 10.211.11.10
+Nmap scan report for 10.211.11.10
+Host is up (0.18s latency).
+
+PORT    STATE SERVICE      VERSION
+88/tcp  open  kerberos-sec Microsoft Windows Kerberos (server time: 2026-10-02 13:35:50Z)
+135/tcp open  msrpc        Microsoft Windows RPC
+139/tcp open  netbios-ssn  Microsoft Windows netbios-ssn
+389/tcp open  ldap         Microsoft Windows Active Directory LDAP (Domain: tryhackme.loc, Site: Default-First-Site-Name)
+445/tcp open  microsoft-ds Windows Server 2019 Datacenter 17763 microsoft-ds (workgroup: TRYHACKME)
+636/tcp open  tcpwrapped
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+| smb2-time: 
+|   date: 2026-10-02T13:35:52
+|_  start_date: N/A
+|_clock-skew: mean: 1s, deviation: 3s, median: 0s
+| smb-os-discovery: 
+|   OS: Windows Server 2019 Datacenter 17763 (Windows Server 2019 Datacenter 6.3)
+|   Computer name: DC
+|   NetBIOS computer name: DC\x00
+|   Domain name: tryhackme.loc
+|   Forest name: tryhackme.loc
+|   FQDN: DC.tryhackme.loc
+|_  System time: 2026-10-02T13:35:56+00:00
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Oct  2 09:36:06 2026 -- 1 IP address (1 host up) scanned in 23.50 seconds

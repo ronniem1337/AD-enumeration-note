@@ -1,0 +1,1196 @@
+# extended LDIF
+#
+# LDAPv3
+# base <dc=tryhackme,dc=loc> with scope subtree
+# filter: (objectClass=person)
+# requesting: ALL
+#
+
+# Guest, Users, tryhackme.loc
+dn: CN=Guest,CN=Users,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Guest
+description: Built-in account for guest access to the computer/domain
+distinguishedName: CN=Guest,CN=Users,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250402151315.0Z
+whenChanged: 20250402151315.0Z
+uSNCreated: 8197
+memberOf: CN=Guests,CN=Builtin,DC=tryhackme,DC=loc
+uSNChanged: 8197
+name: Guest
+objectGUID:: JhTYTKXnbUC5hNj+7ly0bg==
+userAccountControl: 66082
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863881502839
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 514
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEA9QEAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Guest
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 20250402151422.0Z
+dSCorePropagationData: 16010101000417.0Z
+
+# DC, Domain Controllers, tryhackme.loc
+dn: CN=DC,OU=Domain Controllers,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+objectClass: computer
+cn: DC
+distinguishedName: CN=DC,OU=Domain Controllers,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250402151421.0Z
+whenChanged: 20260929192514.0Z
+uSNCreated: 12293
+uSNChanged: 114736
+name: DC
+objectGUID:: pXIIyxi0VEOWHm7kv5bv/w==
+userAccountControl: 532480
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 134354195412064480
+localPolicyFlags: 0
+pwdLastSet: 134351835147088400
+primaryGroupID: 516
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEA8AMAAA==
+accountExpires: 9223372036854775807
+logonCount: 296
+sAMAccountName: DC$
+sAMAccountType: 805306369
+operatingSystem: Windows Server 2019 Datacenter
+operatingSystemVersion: 10.0 (17763)
+serverReferenceBL: CN=DC,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Con
+ figuration,DC=tryhackme,DC=loc
+dNSHostName: DC.tryhackme.loc
+rIDSetReferences: CN=RID Set,CN=DC,OU=Domain Controllers,DC=tryhackme,DC=loc
+servicePrincipalName: Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/DC.tryhackme.l
+ oc
+servicePrincipalName: ldap/DC.tryhackme.loc/ForestDnsZones.tryhackme.loc
+servicePrincipalName: ldap/DC.tryhackme.loc/DomainDnsZones.tryhackme.loc
+servicePrincipalName: TERMSRV/DC
+servicePrincipalName: TERMSRV/DC.tryhackme.loc
+servicePrincipalName: DNS/DC.tryhackme.loc
+servicePrincipalName: GC/DC.tryhackme.loc/tryhackme.loc
+servicePrincipalName: RestrictedKrbHost/DC.tryhackme.loc
+servicePrincipalName: RestrictedKrbHost/DC
+servicePrincipalName: RPC/eb11a1c3-6ead-4982-9fa7-5353cbf89127._msdcs.tryhackm
+ e.loc
+servicePrincipalName: HOST/DC/TRYHACKME
+servicePrincipalName: HOST/DC.tryhackme.loc/TRYHACKME
+servicePrincipalName: HOST/DC
+servicePrincipalName: HOST/DC.tryhackme.loc
+servicePrincipalName: HOST/DC.tryhackme.loc/tryhackme.loc
+servicePrincipalName: E3514235-4B06-11D1-AB04-00C04FC2DCD2/eb11a1c3-6ead-4982-
+ 9fa7-5353cbf89127/tryhackme.loc
+servicePrincipalName: ldap/DC/TRYHACKME
+servicePrincipalName: ldap/eb11a1c3-6ead-4982-9fa7-5353cbf89127._msdcs.tryhack
+ me.loc
+servicePrincipalName: ldap/DC.tryhackme.loc/TRYHACKME
+servicePrincipalName: ldap/DC
+servicePrincipalName: ldap/DC.tryhackme.loc
+servicePrincipalName: ldap/DC.tryhackme.loc/tryhackme.loc
+objectCategory: CN=Computer,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 20250402151422.0Z
+dSCorePropagationData: 16010101000417.0Z
+lastLogonTimestamp: 134351835140838522
+msDS-SupportedEncryptionTypes: 28
+msDS-GenerationId:: n+cm7HpkMI0=
+msDFSR-ComputerReferenceBL: CN=DC,CN=Topology,CN=Domain System Volume,CN=DFSR-
+ GlobalSettings,CN=System,DC=tryhackme,DC=loc
+
+# WRK, Workstations, tryhackme.loc
+dn: CN=WRK,OU=Workstations,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+objectClass: computer
+cn: WRK
+distinguishedName: CN=WRK,OU=Workstations,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250410095850.0Z
+whenChanged: 20260929192613.0Z
+uSNCreated: 17982
+uSNChanged: 114751
+name: WRK
+objectGUID:: Xaxc1OrbSUSUj0uneEjlHw==
+userAccountControl: 4096
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 134354296726169656
+localPolicyFlags: 0
+pwdLastSet: 134351835735114752
+primaryGroupID: 515
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAVwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 90
+sAMAccountName: WRK$
+sAMAccountType: 805306369
+operatingSystem: Windows Server 2019 Standard
+operatingSystemVersion: 10.0 (17763)
+dNSHostName: WRK.tryhackme.loc
+servicePrincipalName: WSMAN/WRK
+servicePrincipalName: WSMAN/WRK.tryhackme.loc
+servicePrincipalName: TERMSRV/WRK
+servicePrincipalName: TERMSRV/WRK.tryhackme.loc
+servicePrincipalName: RestrictedKrbHost/WRK
+servicePrincipalName: HOST/WRK
+servicePrincipalName: RestrictedKrbHost/WRK.tryhackme.loc
+servicePrincipalName: HOST/WRK.tryhackme.loc
+objectCategory: CN=Computer,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+isCriticalSystemObject: FALSE
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 20250430142105.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 134351835731208593
+msDS-SupportedEncryptionTypes: 28
+
+# sshd, Users, tryhackme.loc
+dn: CN=sshd,CN=Users,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: sshd
+distinguishedName: CN=sshd,CN=Users,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250430082636.0Z
+whenChanged: 20250430082636.0Z
+displayName: sshd
+uSNCreated: 20762
+uSNChanged: 20765
+name: sshd
+objectGUID:: ULPDIDNGvUisSXOYNMmlaw==
+userAccountControl: 66048
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863883377997
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904751966470284
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEASQYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: sshd
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# gerald.burgess, Engineering, People, tryhackme.loc
+dn: CN=gerald.burgess,OU=Engineering,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: gerald.burgess
+sn: Burgess
+title: Mid-level
+givenName: Gerald
+distinguishedName: CN=gerald.burgess,OU=Engineering,OU=People,DC=tryhackme,DC=
+ loc
+instanceType: 4
+whenCreated: 20250430141721.0Z
+whenChanged: 20250501120222.0Z
+displayName: Gerald Burgess
+uSNCreated: 20966
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21507
+department: Engineering
+name: gerald.burgess
+objectGUID:: AwpibzojNkuQ+kKiEJjcCg==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863884316653
+lastLogoff: 0
+lastLogon: 133906783248813450
+pwdLastSet: 133904962418948870
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAUAYAAA==
+accountExpires: 9223372036854775807
+logonCount: 4
+sAMAccountName: gerald.burgess
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 133905745420259701
+
+# nigel.parsons, Engineering, People, tryhackme.loc
+dn: CN=nigel.parsons,OU=Engineering,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: nigel.parsons
+sn: Parsons
+title: Senior
+givenName: Nigel
+distinguishedName: CN=nigel.parsons,OU=Engineering,OU=People,DC=tryhackme,DC=l
+ oc
+instanceType: 4
+whenCreated: 20250430141722.0Z
+whenChanged: 20250430141722.0Z
+displayName: Nigel Parsons
+uSNCreated: 20975
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 20979
+department: Engineering
+name: nigel.parsons
+objectGUID:: Uxip7yrc/kmuP7qU8PSfnA==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863885409657
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904962420511114
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAUQYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: nigel.parsons
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# guy.smith, Engineering, People, tryhackme.loc
+dn: CN=guy.smith,OU=Engineering,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: guy.smith
+sn: Smith
+title: Mid-level
+givenName: Guy
+distinguishedName: CN=guy.smith,OU=Engineering,OU=People,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250430141722.0Z
+whenChanged: 20250430141722.0Z
+displayName: Guy Smith
+uSNCreated: 20984
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 20988
+department: Engineering
+name: guy.smith
+objectGUID:: eLG2HmF6r0qMKDncv1hS1A==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863886502588
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904962421605212
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAUgYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: guy.smith
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# jeremy.booth, Human Resources, People, tryhackme.loc
+dn: CN=jeremy.booth,OU=Human Resources,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: jeremy.booth
+sn: Booth
+title: Senior
+givenName: Jeremy
+distinguishedName: CN=jeremy.booth,OU=Human Resources,OU=People,DC=tryhackme,D
+ C=loc
+instanceType: 4
+whenCreated: 20250430141722.0Z
+whenChanged: 20250430141722.0Z
+displayName: Jeremy Booth
+uSNCreated: 20993
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+memberOf: CN=HR Share RW,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 20997
+department: Human Resources
+name: jeremy.booth
+objectGUID:: GBQQpWriPUy/o0pnGIb5zw==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863887595972
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904962422542522
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAUwYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: jeremy.booth
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# barbara.jones, Marketing, People, tryhackme.loc
+dn: CN=barbara.jones,OU=Marketing,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: barbara.jones
+sn: Jones
+title: Associate
+givenName: Barbara
+distinguishedName: CN=barbara.jones,OU=Marketing,OU=People,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250430141722.0Z
+whenChanged: 20250430141722.0Z
+displayName: Barbara Jones
+uSNCreated: 21005
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21009
+department: Marketing
+name: barbara.jones
+objectGUID:: rbErz7tZY0SfQlovt8rrMg==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863888678707
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904962423792547
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAVAYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: barbara.jones
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# marion.kay, Engineering, People, tryhackme.loc
+dn: CN=marion.kay,OU=Engineering,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: marion.kay
+sn: Kay
+title: Mid-level
+givenName: Marion
+distinguishedName: CN=marion.kay,OU=Engineering,OU=People,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250430141722.0Z
+whenChanged: 20250430141722.0Z
+displayName: Marion Kay
+uSNCreated: 21014
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21018
+department: Engineering
+name: marion.kay
+objectGUID:: CD0B2FcTck+dIt9HSUeYkw==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863889734799
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904962424886498
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAVQYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: marion.kay
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# kathryn.williams, Engineering, People, tryhackme.loc
+dn: CN=kathryn.williams,OU=Engineering,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: kathryn.williams
+sn: Williams
+title: Associate
+givenName: Kathryn
+distinguishedName: CN=kathryn.williams,OU=Engineering,OU=People,DC=tryhackme,D
+ C=loc
+instanceType: 4
+whenCreated: 20250430141722.0Z
+whenChanged: 20250430141722.0Z
+displayName: Kathryn Williams
+uSNCreated: 21023
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21027
+department: Engineering
+name: kathryn.williams
+objectGUID:: Z04fTgtfdkGUeYjDQYgTbg==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863890842737
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904962425981724
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAVgYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: kathryn.williams
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# danny.baker, Consulting, People, tryhackme.loc
+dn: CN=danny.baker,OU=Consulting,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: danny.baker
+sn: Baker
+title: Associate
+givenName: Danny
+distinguishedName: CN=danny.baker,OU=Consulting,OU=People,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250430141722.0Z
+whenChanged: 20250430141722.0Z
+displayName: Danny Baker
+uSNCreated: 21032
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21036
+department: Consulting
+name: danny.baker
+objectGUID:: ApdaPrDcQUyTYJ1kSduWNQ==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863891956348
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904962427075847
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAVwYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: danny.baker
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# gary.clarke, Marketing, People, tryhackme.loc
+dn: CN=gary.clarke,OU=Marketing,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: gary.clarke
+sn: Clarke
+title: Senior
+givenName: Gary
+distinguishedName: CN=gary.clarke,OU=Marketing,OU=People,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250430141722.0Z
+whenChanged: 20250430141722.0Z
+displayName: Gary Clarke
+uSNCreated: 21041
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21045
+department: Marketing
+name: gary.clarke
+objectGUID:: v3X5n5i2MkCp1+A3hwwgxQ==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863893066651
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904962428480601
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAWAYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: gary.clarke
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# daniel.turner, Marketing, People, tryhackme.loc
+dn: CN=daniel.turner,OU=Marketing,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: daniel.turner
+sn: Turner
+title: Mid-level
+givenName: Daniel
+distinguishedName: CN=daniel.turner,OU=Marketing,OU=People,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250430141722.0Z
+whenChanged: 20250430141723.0Z
+displayName: Daniel Turner
+uSNCreated: 21050
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21054
+department: Marketing
+name: daniel.turner
+objectGUID:: BqcvpZCW7kON/Dm8Ap7rRQ==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863894004864
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904962429730071
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAWQYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: daniel.turner
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# debra.yates, Engineering, People, tryhackme.loc
+dn: CN=debra.yates,OU=Engineering,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: debra.yates
+sn: Yates
+title: Associate
+givenName: Debra
+distinguishedName: CN=debra.yates,OU=Engineering,OU=People,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250430141723.0Z
+whenChanged: 20250430141723.0Z
+displayName: Debra Yates
+uSNCreated: 21059
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21063
+department: Engineering
+name: debra.yates
+objectGUID:: oS/DAgpAQUatmNYV3onCmw==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863895134935
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904962430981509
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAWgYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: debra.yates
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# jeffrey.thompson, Marketing, People, tryhackme.loc
+dn: CN=jeffrey.thompson,OU=Marketing,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: jeffrey.thompson
+sn: Thompson
+title: Associate
+givenName: Jeffrey
+distinguishedName: CN=jeffrey.thompson,OU=Marketing,OU=People,DC=tryhackme,DC=
+ loc
+instanceType: 4
+whenCreated: 20250430141723.0Z
+whenChanged: 20250430141723.0Z
+displayName: Jeffrey Thompson
+uSNCreated: 21068
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21072
+department: Marketing
+name: jeffrey.thompson
+objectGUID:: 9ywkFTp+8UmOxn66FfwgRQ==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863896067193
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904962432077015
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAWwYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: jeffrey.thompson
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# martin.riley, Engineering, People, tryhackme.loc
+dn: CN=martin.riley,OU=Engineering,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: martin.riley
+sn: Riley
+title: Associate
+givenName: Martin
+distinguishedName: CN=martin.riley,OU=Engineering,OU=People,DC=tryhackme,DC=lo
+ c
+instanceType: 4
+whenCreated: 20250430141723.0Z
+whenChanged: 20250430141723.0Z
+displayName: Martin Riley
+uSNCreated: 21077
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21081
+department: Engineering
+name: martin.riley
+objectGUID:: rpS2JQymrkG3e0BHXJeSPg==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863897159356
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904962433949189
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAXAYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: martin.riley
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# danielle.lee, Finance, People, tryhackme.loc
+dn: CN=danielle.lee,OU=Finance,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: danielle.lee
+sn: Lee
+title: Mid-level
+givenName: Danielle
+distinguishedName: CN=danielle.lee,OU=Finance,OU=People,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250430141723.0Z
+whenChanged: 20250430141723.0Z
+displayName: Danielle Lee
+uSNCreated: 21086
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21090
+department: Finance
+name: danielle.lee
+objectGUID:: qOOAxNkeBEiZBgBStPxDRQ==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863898096874
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904962435042939
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAXQYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: danielle.lee
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# douglas.roberts, Marketing, People, tryhackme.loc
+dn: CN=douglas.roberts,OU=Marketing,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: douglas.roberts
+sn: Roberts
+title: Mid-level
+givenName: Douglas
+distinguishedName: CN=douglas.roberts,OU=Marketing,OU=People,DC=tryhackme,DC=l
+ oc
+instanceType: 4
+whenCreated: 20250430141723.0Z
+whenChanged: 20250430141723.0Z
+displayName: Douglas Roberts
+uSNCreated: 21095
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21099
+department: Marketing
+name: douglas.roberts
+objectGUID:: TBwrlPOwdU2/uitRLqHNDw==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863899303335
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904962436293169
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAXgYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: douglas.roberts
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# dawn.bolton, Engineering, People, tryhackme.loc
+dn: CN=dawn.bolton,OU=Engineering,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: dawn.bolton
+sn: Bolton
+title: Associate
+givenName: Dawn
+distinguishedName: CN=dawn.bolton,OU=Engineering,OU=People,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250430150643.0Z
+whenChanged: 20250430150643.0Z
+displayName: Dawn Bolton
+uSNCreated: 21125
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21126
+department: Engineering
+name: dawn.bolton
+objectGUID:: BH7mZMYwDE6de/yYVjU2GQ==
+userAccountControl: 514
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863900382381
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAXwYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: dawn.bolton
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# danielle.ali, Consulting, People, tryhackme.loc
+dn: CN=danielle.ali,OU=Consulting,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: danielle.ali
+sn: Ali
+title: Manager
+givenName: Danielle
+distinguishedName: CN=danielle.ali,OU=Consulting,OU=People,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250430150644.0Z
+whenChanged: 20250430150644.0Z
+displayName: Danielle Ali
+uSNCreated: 21131
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21135
+department: Consulting
+name: danielle.ali
+objectGUID:: NUG/+5V0aUWWX7rHihzdiA==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863901320180
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904992043325117
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAYAYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: danielle.ali
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# michelle.palmer, Marketing, People, tryhackme.loc
+dn: CN=michelle.palmer,OU=Marketing,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: michelle.palmer
+sn: Palmer
+title: Associate
+givenName: Michelle
+distinguishedName: CN=michelle.palmer,OU=Marketing,OU=People,DC=tryhackme,DC=l
+ oc
+instanceType: 4
+whenCreated: 20250430150644.0Z
+whenChanged: 20250430150644.0Z
+displayName: Michelle Palmer
+uSNCreated: 21140
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21141
+department: Marketing
+name: michelle.palmer
+objectGUID:: kGGgiVkSWUSDtsfaLHr4wQ==
+userAccountControl: 514
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863902414512
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAYQYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: michelle.palmer
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# katie.thomas, Consulting, People, tryhackme.loc
+dn: CN=katie.thomas,OU=Consulting,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: katie.thomas
+sn: Thomas
+title: Associate
+givenName: Katie
+distinguishedName: CN=katie.thomas,OU=Consulting,OU=People,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250430150644.0Z
+whenChanged: 20250510151456.0Z
+displayName: Katie Thomas
+uSNCreated: 21146
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 65640
+department: Consulting
+name: katie.thomas
+objectGUID:: 1I2VoFIma0qxmIAyfv0uhQ==
+userAccountControl: 66050
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863903524657
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133913636960882349
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAYgYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: katie.thomas
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+msDS-SupportedEncryptionTypes: 0
+
+# jennifer.harding, Sales, People, tryhackme.loc
+dn: CN=jennifer.harding,OU=Sales,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: jennifer.harding
+sn: Harding
+title: Mid-level
+givenName: Jennifer
+distinguishedName: CN=jennifer.harding,OU=Sales,OU=People,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250430150644.0Z
+whenChanged: 20250430150644.0Z
+displayName: Jennifer Harding
+uSNCreated: 21152
+memberOf: CN=Internet Access,OU=Groups,DC=tryhackme,DC=loc
+uSNChanged: 21156
+department: Sales
+name: jennifer.harding
+objectGUID:: B/va7n7ivUeoj3s9EwGccg==
+userAccountControl: 512
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863904445466
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133904992046135906
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAYwYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: jennifer.harding
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# strate905, IT, People, tryhackme.loc
+dn: CN=strate905,OU=IT,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: strate905
+givenName: strate905
+distinguishedName: CN=strate905,OU=IT,OU=People,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250501102105.0Z
+whenChanged: 20250501102210.0Z
+displayName: strate905
+uSNCreated: 21454
+memberOf: CN=Remote Management Users,CN=Builtin,DC=tryhackme,DC=loc
+memberOf: CN=Remote Desktop Users,CN=Builtin,DC=tryhackme,DC=loc
+uSNChanged: 21460
+name: strate905
+objectGUID:: NFS4xDTnlEW3Vet12zO8Qg==
+userAccountControl: 66048
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863908351617
+lastLogoff: 0
+lastLogon: 133905758092262617
+pwdLastSet: 133905684659331867
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAZwYAAA==
+accountExpires: 9223372036854775807
+logonCount: 5
+sAMAccountName: strate905
+sAMAccountType: 805306368
+userPrincipalName: strate905@tryhackme.loc
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 133905685305999879
+
+# Kerb Svc, ServiceAccounts, tryhackme.loc
+dn: CN=Kerb Svc,OU=ServiceAccounts,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Kerb Svc
+sn: Svc
+givenName: Kerb
+distinguishedName: CN=Kerb Svc,OU=ServiceAccounts,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250501131319.0Z
+whenChanged: 20250501131653.0Z
+displayName: Kerb Svc
+uSNCreated: 21539
+uSNChanged: 21545
+name: Kerb Svc
+objectGUID:: DKEmusf7nE+3SxAFp1NCtQ==
+userAccountControl: 66048
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863909289244
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133905787996455492
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAaAYAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: krbtgtsvc
+sAMAccountType: 805306368
+userPrincipalName: krbtgtsvc@tryhackme.loc
+servicePrincipalName: HTTP/lab-web.tryhackme.loc
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# asrepuser1, Users, tryhackme.loc
+dn: CN=asrepuser1,CN=Users,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: asrepuser1
+distinguishedName: CN=asrepuser1,CN=Users,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250502032908.0Z
+whenChanged: 20261002153930.0Z
+uSNCreated: 53280
+uSNChanged: 188531
+name: asrepuser1
+objectGUID:: PrAQuwAICEO8n7TrEaBBDA==
+userAccountControl: 4260352
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863910397209
+lastLogoff: 0
+lastLogon: 134354294768168829
+pwdLastSet: 133906306110053757
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAaQYAAA==
+accountExpires: 9223372036854775807
+logonCount: 4
+sAMAccountName: asrepuser1
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 134354291709920263
+
+# Raoul Duke, Users, tryhackme.loc
+dn: CN=Raoul Duke,CN=Users,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Raoul Duke
+sn: Duke
+givenName: Raoul
+distinguishedName: CN=Raoul Duke,CN=Users,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250513074600.0Z
+whenChanged: 20261002155314.0Z
+displayName: Raoul Duke
+uSNCreated: 69676
+uSNChanged: 188575
+name: Raoul Duke
+objectGUID:: NWLsrAinfE687hIoJA3Fow==
+userAccountControl: 66048
+badPwdCount: 10
+codePage: 0
+countryCode: 0
+badPasswordTime: 134354299947359739
+lastLogoff: 0
+lastLogon: 134352863911194569
+pwdLastSet: 133915959609039319
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAMQoAAA==
+accountExpires: 9223372036854775807
+logonCount: 1
+sAMAccountName: rduke
+sAMAccountType: 805306368
+userPrincipalName: rduke@tryhackme.loc
+lockoutTime: 134354299947359739
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250514163924.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 134352863911194569
+
+# User, Finance, People, tryhackme.loc
+dn: CN=User,OU=Finance,OU=People,DC=tryhackme,DC=loc
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: User
+givenName: User
+distinguishedName: CN=User,OU=Finance,OU=People,DC=tryhackme,DC=loc
+instanceType: 4
+whenCreated: 20250515145717.0Z
+whenChanged: 20250515145717.0Z
+displayName: User
+uSNCreated: 106571
+uSNChanged: 106577
+name: User
+objectGUID:: fklfTKosMEyhtlCzZNmmaA==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134352863879315377
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133917946372728232
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAKeA2dTgJ371Q0KEAARIAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: user
+sAMAccountType: 805306368
+userPrincipalName: user@tryhackme.loc
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tryhackme,DC=loc
+dSCorePropagationData: 20250515145717.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# search reference
+ref: ldap://ForestDnsZones.tryhackme.loc/DC=ForestDnsZones,DC=tryhackme,DC=loc
+
+# search reference
+ref: ldap://DomainDnsZones.tryhackme.loc/DC=DomainDnsZones,DC=tryhackme,DC=loc
+
+# search reference
+ref: ldap://tryhackme.loc/CN=Configuration,DC=tryhackme,DC=loc
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 33
+# numEntries: 29
+# numReferences: 3
